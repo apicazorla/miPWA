@@ -43,11 +43,7 @@ if (navigator.serviceWorker) {
 
 //         //         });
 
-
-
 //     });
-
-
 
 //     caches.keys().then( keys => {
 //         console.log(keys);
