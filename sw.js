@@ -1,4 +1,4 @@
-// Network first, then Cache
+importScripts('js/sw-utils.js');
 
 const CACHE_STATIC_NAME = 'static-v1';
 const CACHE_DYNAMIC_NAME = 'dynamic-v1';
@@ -9,17 +9,6 @@ const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 const CACHE_DYNAMIC_LIMIT = 2;
 
 
-limpiarCache(cacheName, numeroItems => {
-    caches.open(cacheName).then(
-        cache => cache.keys().then(
-            keys => {
-                if (keys.length > numeroItems) {
-                    console.log('se limpia caché sobrante de acuerdo al límite');
-                    cache.delete(keys[0]).then(limpiarCache(cacheName, numeroItems));
-                }
-            }
-        ));
-})
 
 
 
@@ -36,7 +25,8 @@ self.addEventListener('install', e => {
             '/css/style.css',
             '/js/app.js',
             '/img/no-image.png',
-            '/pages/sin-conexion.html'
+            '/pages/sin-conexion.html',
+            '/js/sw-utils.js'
         ])
     );
 
