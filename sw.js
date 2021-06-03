@@ -22,6 +22,7 @@ self.addEventListener('install', e => {
         cache => cache.addAll([
             // '/',
             'index.html',
+            'manifest.json',
             'img/main.jpg',
             'css/style.css',
             'js/app.js',
