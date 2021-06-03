@@ -21,8 +21,8 @@ self.addEventListener('install', e => {
 
         cache => cache.addAll([
             // '/',
-            // 'miPWA/',
             'index.html',
+            'img/main.jpg',
             'css/style.css',
             'js/app.js',
             'img/no-image.png',
