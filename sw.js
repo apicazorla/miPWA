@@ -74,13 +74,13 @@ self.addEventListener('fetch', e => {
             return fetch(e.request).then(newResp => {
                     caches.open(CACHE_DYNAMIC_NAME)
                         .then(cache => {
+                            // limpio exceso de caché
                             limpiarCache(CACHE_DYNAMIC_NAME, CACHE_DYNAMIC_LIMIT);
 
                             // para evitar un error de chrome-extension.
                             if (!/^https?:$/i.test(new URL(e.request.url).protocol)) return;
-
+                            // en ese cache, le sustituyo por la nueva recogida por internet.
                             cache.put(e.request, newResp);
-                            // limpio exceso de caché
                         }).catch(err => {
                             console.log(err);
                         });
