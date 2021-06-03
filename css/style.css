@@ -19,7 +19,10 @@ hr {
 p {
     color: #D1D1D1;
 }
-
+a{
+    margin: 30px;
+}
+}
 .images2 {
     text-align: center;
 }
@@ -27,4 +30,17 @@ p {
 .images2 img {
     width: 30%;
     background-size: cover;
+}
+
+.page2{
+    text-align: center;
+}
+.page2 img{
+    width: 80%;
+    background-size: cover;
+    
+}
+
+.footer{
+    padding-bottom: 100px;
 }

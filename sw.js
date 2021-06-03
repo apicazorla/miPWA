@@ -34,7 +34,7 @@ self.addEventListener('install', e => {
             '/index.html',
             '/css/style.css',
             '/js/app.js',
-            '/img/no-img.jpg',
+            '/img/no-image.png',
             '/pages/sin-conexion.html'
         ])
     );
@@ -82,9 +82,13 @@ self.addEventListener('fetch', e => {
             return fetch(e.request).then(newResp => {
                     caches.open(CACHE_DYNAMIC_NAME)
                         .then(cache => {
+                            limpiarCache(CACHE_DYNAMIC_NAME, CACHE_DYNAMIC_LIMIT);
+                            
+                            // para evitar un error de chrome-extension.
+                            if (!/^https?:$/i.test(new URL(e.request.url).protocol)) return;
+
                             cache.put(e.request, newResp);
                             // limpio exceso de caché
-                            limpiarCache(CACHE_DYNAMIC_NAME, CACHE_DYNAMIC_LIMIT);
                         }).catch(err => {
                             console.log(err);
                         });
@@ -100,7 +104,7 @@ self.addEventListener('fetch', e => {
                         return caches.match('/pages/sin-conexion.html');
                     //si es tipo imagen
                     }else if(e.request.destination==='image'){
-                        return caches.match('/img/no-img.jpg');
+                        return caches.match('/img/no-image.png');
                     }
                 });
         });

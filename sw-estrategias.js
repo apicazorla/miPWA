@@ -27,7 +27,7 @@ self.addEventListener('install', e => {
             '/css/style.css',
             '/img/main.jpg',
             '/js/app.js',
-            '/img/no-img.jpg'
+            '/img/no-image.png'
         ]);
     });
 
@@ -99,7 +99,7 @@ self.addEventListener('fetch', e => {
     //     const falloUnaVez = () => {
     //         if (rechazada) {
     //             if (/\.(png|jpg)$/i.test(e.request.url)) {
-    //                 resolve(caches.match('/img/no-img.jpg'));
+    //                 resolve(caches.match('/img/no-image.png'));
     //             } else {
     //                 reject('No se encontro respuesta');
     //             }
