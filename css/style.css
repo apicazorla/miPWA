@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     background-color: #1D2125;
+    text-align: center;
 }
 
 h1,
@@ -22,19 +23,14 @@ p {
 a{
     margin: 30px;
 }
-}
-.images2 {
-    text-align: center;
-}
+
 
 .images2 img {
     width: 30%;
     background-size: cover;
 }
 
-.page2{
-    text-align: center;
-}
+
 .page2 img{
     width: 80%;
     background-size: cover;
