@@ -20,8 +20,8 @@ self.addEventListener('install', e => {
     const cacheEstatico = caches.open(CACHE_STATIC_NAME).then(
 
         cache => cache.addAll([
-            '/',
-            'miPWA/',
+            // '/',
+            // 'miPWA/',
             'index.html',
             'css/style.css',
             'js/app.js',
