@@ -93,7 +93,7 @@ self.addEventListener('fetch', e => {
                     // console.log('err', err);
                     console.log('e', e.request);
                     //si es tipo html, muestro
-                    if (e.request.headers.get('accept').includes('text/html')) {
+                    if (e.request.headers.get('accept') && e.request.headers.get('accept').includes('text/html')) {
                         return caches.match('pages/sin-conexion.html');
                         //si es tipo imagen, muestro
                     } else if (e.request.destination === 'image') {
