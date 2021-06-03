@@ -21,12 +21,13 @@ self.addEventListener('install', e => {
 
         cache => cache.addAll([
             '/',
-            '/index.html',
-            '/css/style.css',
-            '/js/app.js',
-            '/img/no-image.png',
-            '/pages/sin-conexion.html',
-            '/js/sw-utils.js'
+            'miPWA/',
+            'index.html',
+            'css/style.css',
+            'js/app.js',
+            'img/no-image.png',
+            'pages/sin-conexion.html',
+            'js/sw-utils.js'
         ])
     );
 
