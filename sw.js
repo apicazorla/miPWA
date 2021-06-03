@@ -5,10 +5,11 @@ const CACHE_DYNAMIC_NAME = 'dynamic-v1';
 const CACHE_INMUTABLE_NAME = 'inmutable-v1';
 
 // de las 3 imágenes que no están en estáticas, por lo tanto dinámicas, solo se van a cachear 2.
+// es un número demasiado bajo. Lo normal es 50. Es un ejemplo para que veas que si y qué no se cachea.
 const CACHE_DYNAMIC_LIMIT = 2;
 
 
-function limpiarCache(cacheName, numeroItems) {
+limpiarCache(cacheName, numeroItems => {
     caches.open(cacheName).then(
         cache => cache.keys().then(
             keys => {
@@ -18,7 +19,7 @@ function limpiarCache(cacheName, numeroItems) {
                 }
             }
         ));
-}
+})
 
 
 
@@ -26,9 +27,9 @@ self.addEventListener('install', e => {
     //se ejecuta una vez, y no vuelve a entrar hasta que no cambie de versión de caché.
     console.log('install');
     // estos archivos se cachean y no serán llamados desde internet.
-                // '/img/main.jpg',
+    // '/img/main.jpg',
     const cacheEstatico = caches.open(CACHE_STATIC_NAME).then(
-        
+
         cache => cache.addAll([
             '/',
             '/index.html',
@@ -83,7 +84,7 @@ self.addEventListener('fetch', e => {
                     caches.open(CACHE_DYNAMIC_NAME)
                         .then(cache => {
                             limpiarCache(CACHE_DYNAMIC_NAME, CACHE_DYNAMIC_LIMIT);
-                            
+
                             // para evitar un error de chrome-extension.
                             if (!/^https?:$/i.test(new URL(e.request.url).protocol)) return;
 
@@ -99,11 +100,11 @@ self.addEventListener('fetch', e => {
 
                     // console.log('err', err);
                     console.log('e', e.request);
-                    //si es tipo html
+                    //si es tipo html, muestro
                     if (e.request.headers.get('accept').includes('text/html')) {
                         return caches.match('/pages/sin-conexion.html');
-                    //si es tipo imagen
-                    }else if(e.request.destination==='image'){
+                        //si es tipo imagen, muestro
+                    } else if (e.request.destination === 'image') {
                         return caches.match('/img/no-image.png');
                     }
                 });
