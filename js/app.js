@@ -1,8 +1,11 @@
-
-
-if ( navigator.serviceWorker ) {
-    // navigator.serviceWorker.register('sw.js');
-    navigator.serviceWorker.register('sw.js');
+if (navigator.serviceWorker) {
+    var swLocation = '/miPWA/sw.js';
+    // si estamos en localhost
+    if (navigator.serviceWorker) {
+        if (url.includes('localhost')) {
+            swLocation = '/sw.js';
+        }
+    }
 }
 
 // if ( window.caches ) {
@@ -51,6 +54,3 @@ if ( navigator.serviceWorker ) {
 
 
 // };
-
-
-
