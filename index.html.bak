@@ -17,7 +17,7 @@
 	<h1>Apicazorla </h1>
     
 	<h2>Escutoides de miel </h2>
-<video wmode= "transparent"  width= "800" height="450" 
+<video wmode= "transparent"  width= "600" height="340" 
        controls>
   <source src="https://drive.google.com/uc?export=download&id=1PcqBMHUnmzBJlANdq0odzxbxMOx6rUjA" type='video/mp4'  >
 </video>
@@ -26,21 +26,21 @@
 	
 	<!- img src="img/main.jpg" alt="Vías del tren" class="img-fluid" ->
     <hr>
-    <p>
-        Un regalo muy dulceen un envase de bella estética cuya figura geométrica tiene su origen en las matemáticas y la biología.
-    </p>
-    <p>
-        En la página 2 pueden ver otros regalos que puede ofrecerlos a sus amigos y conocidos en  la celebración de eventos.
-    </p>
-    <p>
-        <a class="btn btn-primary" href="page2.html" role="button">Acceder a pág 2 </a>
-    </p>
-    <div class="images2">
-        <img src="img2/a.jpg" alt="">
-        <img src="img2/b.jpg" alt="">
+     <div class="images2">
+        <img src="img2a.jpg" alt="">
+        <img src="img2b.jpg" alt="">
 		
-        <img src="img2/c.jpg" alt="">
+        <img src="img2c.jpg" alt="">
     </div>
+	
+	<p>
+        Un regalo muy dulce en un envase de bella estética cuya figura geométrica tiene su origen en las matemáticas y la biología.
+    </p>
+   
+    <p>
+        <a class="btn btn-primary" href="page2.html" role="button">Otros regalos pág 2 </a>
+    </p>
+   
 
     <div class="footer">
         
