@@ -26,21 +26,19 @@
 	
 	<!- img src="img/main.jpg" alt="Vías del tren" class="img-fluid" ->
     <hr>
-     <div class="images2">
-        <img src="img2a.jpg" alt="">
-        <img src="img2b.jpg" alt="">
-		
-        <img src="img2c.jpg" alt="">
-    </div>
-	
-	<p>
+    <p>
         Un regalo muy dulce en un envase de bella estética cuya figura geométrica tiene su origen en las matemáticas y la biología.
     </p>
    
     <p>
         <a class="btn btn-primary" href="page2.html" role="button">Otros regalos pág 2 </a>
     </p>
-   
+    <div class="images2">
+        <img src="img2a.jpg" alt="">
+        <img src="img2b.jpg" alt="">
+		
+        <img src="img2c.jpg" alt="">
+    </div>
 
     <div class="footer">
         
