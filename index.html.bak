@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIEL PARA REGALOS</title>
+    <title>Escutoides de miel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json?v=2">
@@ -13,7 +13,7 @@
 <body class="container">
 
 
-    <h1>MI PWA</h1>
+    <h1>ESCUTOIDES DE MIEL </h1>
     
 <video wmode= "transparent"  width= "800" height="450" 
        controls>
@@ -25,14 +25,13 @@
 	<!- img src="img/main.jpg" alt="Vías del tren" class="img-fluid" ->
     <hr>
     <p>
-        Un ejemplo de PWA, con varias estrategias de caché en sw.js.
+        Un regalo muy dulceen un envase de bella estética cuya figura geométrica tiene su origen en las matemáticas y la biología.
     </p>
     <p>
-        Comenta y descomenta cada uno para ver su comportamiento. En devTools, clear site data, borra los datos entre
-        cambio y cambio.
+        En la página 2 pueden ver otros regalos que puede ofrecerlos a sus amigos y conocidos en  la celebración de eventos.
     </p>
     <p>
-        <a class="btn btn-primary" href="page2.html" role="button">Acceder a página 2</a>
+        <a class="btn btn-primary" href="page2.html" role="button">Acceder a pág 2 </a>
     </p>
     <div class="images2">
         <img src="img2/a.jpg" alt="">
