@@ -38,8 +38,14 @@
 		<img src="img2/a.jpg" alt="">
         <img src="img2/c.jpg" alt="">
 	</div>
+ <Text style={styles.text}>Más información en</Text>
+      <Text style={{color: 'blue'}}
+      onPress={() => Linking.openURL('http://apicazorla.com/post/getting-started')}>
+  Apicazorla
+</Text>
+   
 
-    <div class="footer">
+   <div class="footer">
         
     </div>
 
