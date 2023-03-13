@@ -17,7 +17,8 @@
         <h1>Page2</h1>
         <p>Esta página solo es accesible con acceso a internet, no se cachea.</p>
         <img src="img/2.jpg" width="400">
-        <div>
+        <br>
+		<div>
             <a class="btn btn-primary" href="index.html" role="button">Volver a Index</a>
         </div>
     </div>
