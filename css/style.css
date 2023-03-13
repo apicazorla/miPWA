@@ -3,8 +3,7 @@ body {
     height: 100%;
     background-color: #4e5042;
     text-align: center;
-}
-body { color: #FF0000; }
+
 
 h1,
 h2,
@@ -19,7 +18,7 @@ hr {
 }
 
 p {
-    color: #D1D1D1;
+    color: #dee735;
 }
 a{
     margin: 30px;
