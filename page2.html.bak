@@ -20,9 +20,9 @@
     <div class="page2">
         <h1>Page2</h1>
         <p>Esta página solo es accesible con acceso a internet, no se cachea.</p>
-		<img src="img/2.jpg" width="400">
-        <img src="img/2.jpg" width="400">
-		<img src="img/2.jpg" width="400">
+		<img src="img/a.jpg" width="175">
+        <img src="img/b.jpg" width="175">
+		<img src="img/c.jpg" width="175">
 		<br>
 		<br>
 		<div>
