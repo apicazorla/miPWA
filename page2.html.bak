@@ -18,15 +18,21 @@
 <body class="container">
 
     <div class="page2">
-        <h1>Page2</h1>
-        <p>Esta página solo es accesible con acceso a internet, no se cachea.</p>
-		<img src="img/a.jpg" width="175">
-        <img src="img/b.jpg" width="175">
-		<img src="img/c.jpg" width="175">
+        <h1>Otros regalos de miel</h1>
+        <p>Tarro de 125 g sin o con cuchara mielera y tarro cerámico de 250 g, ambos con miel de flores.</p>
+		<br>
+		<br>
+		<p>
+		Seguro que alguno de estos regalos le gustará a sus amigos, familiares o compañeros en la celebración de cualquier
+		evento que organice: bautizo, comunión, boda, comida de empresa,...
+		</p>
+		<img src="img/a.jpg" width="200">
+        <img src="img/b.jpg" width="200">
+		<img src="img/c.jpg" width="200">
 		<br>
 		<br>
 		<div>
-            <a class="btn btn-primary" href="index.html" role="button">Volver a Index</a>
+            <a class="btn btn-primary" href="index.html" role="button">Volver a Inicio</a>
         </div>
     </div>
 
