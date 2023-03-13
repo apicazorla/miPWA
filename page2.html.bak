@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.json?v=2">
 
 <style>
-    body { color: #FFD700; }
+    body { color: #FFD700; 
   </style>
 </head>
 
@@ -21,16 +21,25 @@
         <h1>Otros regalos de miel</h1>
         <p>Tarro de 125 g sin o con cuchara mielera y tarro cerámico de 250 g, ambos con miel de flores.</p>
 		<br>
+		<img src="img/a.jpg" width="200">
+        <img src="img/b.jpg" width="200">
+		<img src="img/c.jpg" width="200">
 		<br>
 		<p>
 		Seguro que alguno de estos regalos le gustará a sus amigos, familiares o compañeros en la celebración de cualquier
 		evento que organice: bautizo, comunión, boda, comida de empresa,...
 		</p>
-		<img src="img/a.jpg" width="200">
-        <img src="img/b.jpg" width="200">
-		<img src="img/c.jpg" width="200">
-		<br>
-		<br>
+		<p>
+		 Pedidos en:
+		</p>
+		<p>
+        <a class="btn btn-primary" href="http://https://www.productoscazorla.com/" role="button">Productoscazorla.com  </a>
+    </p>
+		<p>
+        <a class="btn btn-primary" href="http://https://https://embutidoscarrasco.com/" role="button">CazorlaArtesano.Es  </a>
+    </p>
+	<br>
+	También puede encontrarlos en otras tiendas de la comarca de Cazorla.
 		<div>
             <a class="btn btn-primary" href="index.html" role="button">Volver a Inicio</a>
         </div>
