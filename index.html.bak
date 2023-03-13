@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="manifest.json?v=2">
 <style>
-    body { color: #FF0000; }
+    body { color: #FFD700; }
   </style>
 
 </head>
