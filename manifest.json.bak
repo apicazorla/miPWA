@@ -8,9 +8,9 @@
   "start_url": "index.html",
   "icons": [
     {
-      "src": "images/icons/icon-72x72.png",
+      "src": "images/icons/icon.jpg",
       "sizes": "72x72",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
       "src": "images/icons/icon-96x96.png",
